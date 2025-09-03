@@ -150,6 +150,28 @@ footer {
   margin-top: 3rem;
 }
 
+.photos-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.photos-gallery img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(56, 189, 248, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photos-gallery img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px #38bdf8;
+}
+
 @media (max-width: 900px) {
   main {
     padding: 1.2rem;
