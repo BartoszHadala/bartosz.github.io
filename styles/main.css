@@ -1,37 +1,46 @@
 body {
   font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
-  background: #181a1b;
-  color: #eaeaea;
+  background: radial-gradient(ellipse at top left, #232946 60%, #121629 100%);
+  color: #eaf2fb;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 header {
-  background: #181a1b;
-  padding: 2.5rem 0 1.5rem 0;
+  background: transparent;
+  padding: 3rem 0 1.5rem 0;
   text-align: center;
-  border-bottom: 1px solid #232323;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 3px;
   margin: 0 0 0.5rem 0;
-  color: #ffd700;
+  color: #38bdf8;
+  text-shadow: 0 4px 32px #38bdf8, 0 1px 0 #fff;
   background: none;
   display: inline-block;
   padding: 0.2em 0.7em;
-  border-radius: 8px;
+  border-radius: 16px;
   font-family: "Montserrat", serif;
-  text-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+  animation: neon 2s infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 8px #38bdf8, 0 1px 0 #fff;
+  }
+  to {
+    text-shadow: 0 0 32px #38bdf8, 0 1px 0 #fff;
+  }
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   display: flex;
   justify-content: center;
   gap: 2.5rem;
@@ -39,42 +48,48 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #eaeaea;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  transition: background 0.2s, color 0.2s;
-  border-bottom: 2px solid transparent;
+  color: #eaf2fb;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  background: rgba(56, 189, 248, 0.08);
+  box-shadow: 0 2px 12px rgba(56, 189, 248, 0.12);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
 }
 
 nav a:hover {
-  color: #ffd700;
-  border-bottom: 2px solid #ffd700;
-  background: #232323;
+  background: rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 4px 24px #38bdf8;
 }
 
 main {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  background: #232323;
-  border-radius: 18px;
-  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
-  padding: 2.5rem;
+  max-width: 950px;
+  margin: 3rem auto;
+  background: rgba(18, 22, 41, 0.7);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px rgba(56, 189, 248, 0.1);
+  padding: 3rem;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.18);
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
-  color: #ffd700;
-  font-size: 2rem;
+  color: #38bdf8;
+  font-size: 2.2rem;
   margin-bottom: 1.2rem;
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid #38bdf8;
   padding-bottom: 0.3rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
+  text-shadow: 0 2px 12px #38bdf8;
 }
 
 .about-container {
@@ -85,56 +100,62 @@ h2 {
 }
 
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #ffd700;
-  box-shadow: 0 4px 16px rgba(255, 215, 0, 0.12);
-  background: #232323;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 8px 32px #38bdf8;
+  background: #232946;
+  transition: box-shadow 0.3s;
+}
+
+.profile-photo:hover {
+  box-shadow: 0 0 64px #38bdf8, 0 8px 32px #38bdf8;
 }
 
 .about-description {
   flex: 1;
   min-width: 220px;
-  font-size: 1.1rem;
-  color: #e0e0e0;
+  font-size: 1.2rem;
+  color: #eaf2fb;
+  line-height: 1.7;
 }
 
 .contact-info p {
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   margin: 0.7em 0;
 }
 
 .contact-info a {
-  color: #ffd700;
+  color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.2s;
 }
 
 .contact-info a:hover {
-  color: #eaeaea;
+  color: #fff;
   text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 1.5rem 0;
-  background: #181a1b;
-  color: #ffd700;
-  border-top: 1px solid #232323;
-  margin-top: 2rem;
-  font-size: 1rem;
+  padding: 2rem 0;
+  background: transparent;
+  color: #38bdf8;
+  font-size: 1.1rem;
   letter-spacing: 1px;
+  border-top: 1px solid #232946;
+  margin-top: 3rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   main {
-    padding: 1rem;
+    padding: 1.2rem;
   }
   header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 0.2em 0.7em;
   }
   h2 {
@@ -147,5 +168,9 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.2rem;
+  }
+  .profile-photo {
+    width: 140px;
+    height: 140px;
   }
 }
