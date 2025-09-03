@@ -164,16 +164,27 @@ footer {
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(56, 189, 248, 0.15);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s,
+    width 0.3s, height 0.3s, object-fit 0.3s;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .photos-gallery img:hover {
-  transform: scale(1.07);
-  box-shadow: 0 8px 32px #38bdf8;
+  position: relative;
+  z-index: 10;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 8px 32px #38bdf8, 0 0 0 4px #232946;
+  background: #232946;
+  transform: scale(1.15);
 }
 
 .lightbox {
-  display: none;
+  display: none; /* Upewnij się, że to jest ustawione */
   position: fixed;
   z-index: 9999;
   left: 0;
