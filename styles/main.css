@@ -171,11 +171,11 @@ footer {
 }
 
 .photos-gallery img:hover {
-  width: 1200px;
-  height: 1200px;
+  width: 500px;
+  height: 500px;
   object-fit: contain;
   background: #232946;
-  box-shadow: 0 16px 64px #38bdf8;
+  box-shadow: 0 12px 48px #38bdf8;
   z-index: 2;
 }
 
@@ -253,8 +253,8 @@ footer {
   .photos-gallery img:hover {
     width: 90vw;
     height: 60vw;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 500px;
+    max-height: 500px;
   }
 }
 
