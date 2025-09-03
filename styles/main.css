@@ -164,20 +164,19 @@ footer {
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(56, 189, 248, 0.15);
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s,
-    object-fit 0.3s;
+  transition: width 0.3s, height 0.3s, object-fit 0.3s, background 0.3s,
+    box-shadow 0.3s;
   cursor: pointer;
   background: #232946;
 }
 
 .photos-gallery img:hover {
   width: 350px;
-  height: 250px;
+  height: 350px;
   object-fit: contain;
   background: #232946;
-  transform: none;
-  z-index: 2;
   box-shadow: 0 8px 32px #38bdf8;
+  z-index: 2;
 }
 
 .lightbox {
