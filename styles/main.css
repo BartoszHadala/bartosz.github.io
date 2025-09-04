@@ -174,11 +174,11 @@ footer {
 }
 
 .photos-gallery img:hover {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
   background: #232946;
-  box-shadow: 0 12px 48px #38bdf8;
+  box-shadow: 0 8px 32px #38bdf8;
   z-index: 2;
 }
 
@@ -269,23 +269,25 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  padding: 0.7em 1.4em;
+  padding: 0.8em 1.6em;
   font-size: 1.08rem;
   font-weight: 700;
-  color: #232946;
+  color: #fff;
   background: linear-gradient(90deg, #38bdf8 60%, #232946 100%);
   border: none;
-  border-radius: 24px;
+  border-radius: 28px;
   text-decoration: none;
   box-shadow: 0 2px 12px rgba(56, 189, 248, 0.18);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
   position: relative;
+  letter-spacing: 0.5px;
 }
 
 .project-card ul a:hover {
   background: linear-gradient(90deg, #232946 60%, #38bdf8 100%);
-  color: #fff;
+  color: #38bdf8;
   box-shadow: 0 4px 24px #38bdf8;
+  transform: scale(1.07);
 }
 
 .project-card ul a::before {
