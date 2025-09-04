@@ -109,7 +109,6 @@ h2 {
   background: #232946;
   transition: box-shadow 0.3s;
 }
-
 .profile-photo:hover {
   box-shadow: 0 0 64px #38bdf8, 0 8px 32px #38bdf8;
 }
@@ -126,14 +125,12 @@ h2 {
   font-size: 1.15rem;
   margin: 0.7em 0;
 }
-
 .contact-info a {
   color: #38bdf8;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
-
 .contact-info a:hover {
   color: #fff;
   text-decoration: underline;
@@ -150,15 +147,47 @@ footer {
   margin-top: 3rem;
 }
 
+/* Unified button styles */
+.show-photos-btn,
+.show-education-btn,
+.show-skills-btn,
+.show-experience-btn {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  border: 2px solid #38bdf8;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.show-photos-btn:hover,
+.show-education-btn:hover,
+.show-skills-btn:hover,
+.show-experience-btn:hover {
+  background: #38bdf8;
+  color: #232946;
+}
+.show-education-btn:last-child,
+.show-photos-btn:last-child,
+.show-skills-btn:last-child,
+.show-experience-btn:last-child {
+  margin-right: 0;
+}
+
+/* Gallery styles */
 .photos-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
   margin-top: 1.5rem;
-  overflow: hidden; /* Dodaj to */
+  overflow: hidden;
 }
-
 .photos-gallery img {
   width: 220px;
   height: 160px;
@@ -172,7 +201,6 @@ footer {
   cursor: pointer;
   background: #232946;
 }
-
 .photos-gallery img:hover {
   width: 350px;
   height: 350px;
