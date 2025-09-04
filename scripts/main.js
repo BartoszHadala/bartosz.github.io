@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
   */
   // --- Koniec sekcji lightbox ---
 
+  // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
   const educationSection = document.getElementById("education");
-
   if (showEducationBtn && educationSection) {
     showEducationBtn.addEventListener("click", () => {
       educationSection.style.display = "block";
@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Show Photos section
   const showPhotosBtn = document.getElementById("show-photos-btn");
   const photosSection = document.getElementById("photos");
-
   if (showPhotosBtn && photosSection) {
     showPhotosBtn.addEventListener("click", () => {
       photosSection.style.display = "block";

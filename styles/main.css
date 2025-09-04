@@ -307,6 +307,7 @@ footer {
   border-radius: 24px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+  display: inline-block;
 }
 
 .show-photos-btn:hover {
@@ -326,9 +327,16 @@ footer {
   border-radius: 24px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+  display: inline-block;
 }
 
-.show-education-btn:hover {
+.show-education-btn:last-child,
+.show-photos-btn:last-child {
+  margin-right: 0;
+}
+
+.show-education-btn:hover,
+.show-photos-btn:hover {
   background: #38bdf8;
   color: #232946;
 }
