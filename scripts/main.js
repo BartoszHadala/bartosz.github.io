@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
 
+  // --- Usuń lub zakomentuj poniższy kod lightbox ---
+  /*
   const galleryImages = document.querySelectorAll(".photos-gallery img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.querySelector(".lightbox-img");
@@ -47,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxImg.src = "";
     }
   });
+  */
+  // --- Koniec sekcji lightbox ---
 
   const showPhotosBtn = document.getElementById("show-photos-btn");
   const photosSection = document.getElementById("photos");
