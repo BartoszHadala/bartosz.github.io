@@ -156,11 +156,14 @@ footer {
   gap: 1.5rem;
   justify-content: center;
   margin-top: 1.5rem;
+  overflow: hidden; /* Dodaj to */
 }
 
 .photos-gallery img {
   width: 220px;
   height: 160px;
+  max-width: 500px;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(56, 189, 248, 0.15);
@@ -247,6 +250,48 @@ footer {
   color: #eaf2fb;
   font-size: 1.08rem;
   line-height: 1.6;
+}
+
+.project-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card ul li {
+  margin: 0;
+}
+
+.project-card ul a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.7em 1.4em;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #232946;
+  background: linear-gradient(90deg, #38bdf8 60%, #232946 100%);
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(56, 189, 248, 0.18);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.project-card ul a:hover {
+  background: linear-gradient(90deg, #232946 60%, #38bdf8 100%);
+  color: #fff;
+  box-shadow: 0 4px 24px #38bdf8;
+}
+
+.project-card ul a::before {
+  content: "📄";
+  font-size: 1.2em;
+  margin-right: 0.3em;
 }
 
 .show-photos-btn {
