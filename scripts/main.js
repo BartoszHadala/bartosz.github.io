@@ -47,4 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxImg.src = "";
     }
   });
+
+  const showPhotosBtn = document.getElementById("show-photos-btn");
+  const photosSection = document.getElementById("photos");
+
+  if (showPhotosBtn && photosSection) {
+    showPhotosBtn.addEventListener("click", () => {
+      photosSection.style.display = "block";
+      showPhotosBtn.style.display = "none";
+      photosSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 });
