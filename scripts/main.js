@@ -63,6 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Show Skills section
+  const showSkillsBtn = document.getElementById("show-skills-btn");
+  const skillsSection = document.getElementById("skills");
+  if (showSkillsBtn && skillsSection) {
+    showSkillsBtn.addEventListener("click", () => {
+      skillsSection.style.display = "block";
+      showSkillsBtn.style.display = "none";
+      skillsSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
   // Show Photos section
   const showPhotosBtn = document.getElementById("show-photos-btn");
   const photosSection = document.getElementById("photos");
