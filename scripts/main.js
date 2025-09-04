@@ -84,4 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
       photosSection.scrollIntoView({ behavior: "smooth" });
     });
   }
+
+  // Show Experience section
+  const showExperienceBtn = document.getElementById("show-experience-btn");
+  const experienceSection = document.getElementById("experience");
+  if (showExperienceBtn && experienceSection) {
+    showExperienceBtn.addEventListener("click", () => {
+      experienceSection.style.display = "block";
+      showExperienceBtn.style.display = "none";
+      experienceSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 });

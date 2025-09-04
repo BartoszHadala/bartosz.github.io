@@ -398,6 +398,35 @@ footer {
   list-style: disc inside;
 }
 
+.experience-list {
+  margin-top: 1.5rem;
+  font-size: 1.12rem;
+  color: #eaf2fb;
+  list-style: disc inside;
+  padding-left: 0;
+}
+.experience-list li {
+  margin-bottom: 0.7rem;
+}
+.show-experience-btn {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  border: 2px solid #38bdf8;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.show-experience-btn:hover {
+  background: #38bdf8;
+  color: #232946;
+}
+
 @media (max-width: 1200px) {
   .photos-gallery img:hover {
     width: 90vw;
