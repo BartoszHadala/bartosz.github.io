@@ -287,9 +287,10 @@ footer {
 }
 
 .project-card ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1.2rem;
+  align-items: center;
   padding: 0;
   margin-top: 1.5rem;
   list-style: none;
@@ -301,6 +302,14 @@ footer {
 
 .project-card ul li.wide {
   grid-column: span 2;
+}
+
+.project-card ul a,
+.project-link {
+  width: 420px;
+  max-width: 90vw;
+  text-align: center;
+  display: inline-block;
 }
 
 .project-card ul a {
