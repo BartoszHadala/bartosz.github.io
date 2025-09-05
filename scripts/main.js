@@ -297,3 +297,4 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("lang-en")
     .addEventListener("click", () => setLanguage("en"));
 });
+<link rel="icon" type="image/png" href="assets/favicon.png" />
