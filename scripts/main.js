@@ -106,4 +106,33 @@ document.addEventListener("DOMContentLoaded", () => {
       interestsSection.scrollIntoView({ behavior: "smooth" });
     });
   }
+
+  const translations = {
+    pl: {
+      header: "Bartosz Hadala – Student Elektroniki i Telekomunikacji",
+      about:
+        "Cześć! Nazywam się Bartosz Hadala i jestem studentem Elektroniki i Telekomunikacji na AGH w Krakowie. <br /><br />Pasjonuję się mikrokontrolerami, technikami modulacji sygnałów oraz nowoczesną elektroniką. Lubię pracować z różnymi językami programowania i systemami wbudowanymi, stale szukając nowych wyzwań i innowacyjnych rozwiązań. <br /><br />Jestem także aktywnym członkiem Koła Naukowego Micro, gdzie współpracuję przy innowacyjnych projektach elektronicznych i rozwijam praktyczne umiejętności.",
+      // Dodaj kolejne tłumaczenia...
+    },
+    en: {
+      header: "Bartosz Hadala – Electronics and Telecommunications Student",
+      about:
+        "Hi! My name is Bartosz Hadala and I am a student of Electronics and Telecommunications at AGH University of Science and Technology in Krakow. <br /><br />I am passionate about microcontrollers, signal modulation techniques, and all aspects of modern electronics. I enjoy working with various programming languages and embedded systems, constantly seeking new challenges and innovative solutions. <br /><br />I am also an active member of the Micro Student Research Group, where I collaborate on innovative electronics projects and expand my practical skills.",
+      // Add more translations...
+    },
+  };
+
+  function setLanguage(lang) {
+    document.querySelector("header h1").innerHTML = translations[lang].header;
+    document.querySelector(".about-description p").innerHTML =
+      translations[lang].about;
+    // Dodaj kolejne elementy do tłumaczenia...
+  }
+
+  document
+    .getElementById("lang-pl")
+    .addEventListener("click", () => setLanguage("pl"));
+  document
+    .getElementById("lang-en")
+    .addEventListener("click", () => setLanguage("en"));
 });
