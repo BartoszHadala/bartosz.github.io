@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       education_h2: "Wykształcenie",
       education: [
         `<strong>AGH Kraków</strong><br />Elektronika i Telekomunikacja, studia inżynierskie<br />2023 – obecnie`,
-        `<strong>Liceum w Krynicy-Zdroju</strong><br />Technik informatyk, ukończony z wyróżnieniem (Nagroda Prezesa Rady Ministrów)<br />2019 – 2023`,
+        `<strong>Technikum w Krynicy-Zdroju</strong><br />Technik informatyk, ukończony z wyróżnieniem (Nagroda Prezesa Rady Ministrów)<br />2019 – 2023`,
       ],
       skills_h2: "Umiejętności",
       skills: [

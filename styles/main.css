@@ -98,6 +98,15 @@ h2 {
   text-shadow: 0 2px 12px #38bdf8;
 }
 
+h3 {
+  color: #38bdf8;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .about-container {
   display: flex;
   align-items: center;
@@ -127,6 +136,17 @@ h2 {
   font-size: 1.2rem;
   color: #eaf2fb;
   line-height: 1.7;
+}
+
+.about-description p,
+.education-list li,
+.skills-list li,
+.experience-list li,
+#experience p,
+#interests p,
+.project-card p,
+.contact-info p {
+  text-align: justify;
 }
 
 .contact-info p {
