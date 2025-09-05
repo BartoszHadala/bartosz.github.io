@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("1"); // Dodano do weryfikacji aktualności strony
+  console.log("5"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
