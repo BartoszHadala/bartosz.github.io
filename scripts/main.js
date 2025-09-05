@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("2"); // Dodano do weryfikacji aktualności strony
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
@@ -365,13 +365,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerH1 = document.querySelector("header h1");
     if (headerH1) headerH1.innerHTML = translations[lang].header;
 
-    // Nawigacja
+    // Górne przyciski nawigacyjne
     const navAbout = document.getElementById("nav-about");
     if (navAbout) navAbout.textContent = translations[lang].nav[0];
     const navProjects = document.getElementById("nav-projects");
     if (navProjects) navProjects.textContent = translations[lang].nav[1];
     const navContact = document.getElementById("nav-contact");
     if (navContact) navContact.textContent = translations[lang].nav[2];
+
+    // Nagłówek sekcji My Projects
+    const projectsH2 = document.querySelector("#projects h2");
+    if (projectsH2) projectsH2.textContent = translations[lang].projects_h2;
+
+    // Nagłówek sekcji Contact
+    const contactH2 = document.querySelector("#contact h2");
+    if (contactH2) contactH2.textContent = translations[lang].contact_h2;
+
+    // Lista w sekcji kontakt
+    const contactInfo = document.querySelectorAll(".contact-info p");
+    if (contactInfo.length >= 5) {
+      contactInfo[0].querySelector("strong").textContent =
+        translations[lang].contact.email;
+      contactInfo[1].querySelector("strong").textContent =
+        translations[lang].contact.phone;
+      contactInfo[2].querySelector("strong").textContent =
+        translations[lang].contact.linkedin;
+      contactInfo[3].querySelector("strong").textContent =
+        translations[lang].contact.city;
+      contactInfo[4].querySelector("strong").textContent =
+        translations[lang].contact.cv;
+      contactInfo[4].querySelector("a").textContent =
+        translations[lang].cv_download;
+    }
 
     // Przycisk sekcji About Me
     translateAboutButtons(lang);
