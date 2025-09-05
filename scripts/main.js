@@ -288,6 +288,33 @@ document.addEventListener("DOMContentLoaded", () => {
       translations[lang].contact.cv;
     contactInfo[4].querySelector("a").textContent =
       translations[lang].cv_download;
+
+    // Projekty
+    const projectCards = document.querySelectorAll(".project-card");
+    translations[lang].projects.forEach((proj, i) => {
+      if (projectCards[i]) {
+        projectCards[i].querySelector("h3").textContent =
+          lang === "pl" ? proj.title_pl : proj.title;
+        projectCards[i].querySelector("p").textContent =
+          lang === "pl" ? proj.desc_pl : proj.desc;
+        const projBtns = projectCards[i].querySelectorAll("a.project-link");
+        projBtns.forEach((btn, j) => {
+          btn.textContent =
+            lang === "pl" ? proj.buttons_pl[j] : proj.buttons[j];
+        });
+      }
+    });
+
+    // Przycisków About Me
+    const aboutBtns = document.querySelectorAll(
+      "#show-education-btn, #show-skills-btn, #show-experience-btn, #show-interests-btn, #show-photos-btn"
+    );
+    aboutBtns.forEach((btn, i) => {
+      btn.textContent =
+        lang === "pl"
+          ? translations.pl.about_buttons_pl[i]
+          : translations.en.about_buttons[i];
+    });
   }
 
   document
@@ -297,4 +324,4 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("lang-en")
     .addEventListener("click", () => setLanguage("en"));
 });
-<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />;
