@@ -287,16 +287,20 @@ footer {
 }
 
 .project-card ul {
-  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
   padding: 0;
   margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  list-style: none;
 }
 
 .project-card ul li {
   margin: 0;
+}
+
+.project-card ul li.wide {
+  grid-column: span 2;
 }
 
 .project-card ul a {
