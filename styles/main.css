@@ -100,14 +100,16 @@ h2 {
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
   border: 6px solid #38bdf8;
   box-shadow: 0 8px 32px #38bdf8;
   background: #232946;
   transition: box-shadow 0.3s;
+  aspect-ratio: 1 / 1;
 }
 .profile-photo:hover {
   box-shadow: 0 0 64px #38bdf8, 0 8px 32px #38bdf8;
