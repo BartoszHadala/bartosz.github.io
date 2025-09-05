@@ -283,6 +283,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("header h1").innerHTML = translations[lang].header;
     translateAboutButtons(lang);
     translateProjects(lang);
+    document.getElementById("oscillator-desc").textContent =
+      translations[lang].oscillator_desc;
     // Dodaj tłumaczenie pozostałych sekcji analogicznie...
   }
 
