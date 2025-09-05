@@ -283,6 +283,16 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("header h1").innerHTML = translations[lang].header;
     translateAboutButtons(lang);
     translateProjects(lang);
+    document.getElementById("oscillator-desc").textContent =
+      translations[lang].oscillator_desc;
+
+    // Tłumaczenie przycisków nawigacyjnych
+    document.getElementById("nav-about").textContent =
+      translations[lang].nav[0];
+    document.getElementById("nav-projects").textContent =
+      translations[lang].nav[1];
+    document.getElementById("nav-contact").textContent =
+      translations[lang].nav[2];
   }
 
   // Obsługa kliknięcia flag
