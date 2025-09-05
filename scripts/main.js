@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
@@ -128,8 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           title: "Relaxation Oscillator with Operational Amplifiers",
           title_pl: "Oscylator relaksacyjny na wzmacniaczach operacyjnych",
-          desc: "This project showcases the design and implementation...",
-          desc_pl: "Projekt prezentuje budowę i implementację...",
+          desc: `This project showcases the design and implementation of a relaxation oscillator based on operational amplifiers, a key component for generating periodic signals such as square, triangle, and sawtooth waveforms. Widely used in measurement and control systems, my solution combines theoretical analysis, simulation, and practical testing. I focused on optimizing circuit stability and signal quality, analyzing the impact of real-world component imperfections and operational amplifier parameters. The result is a reliable, versatile oscillator, verified both in simulation and laboratory conditions.`,
+          desc_pl: `Projekt prezentuje budowę i implementację oscylatora relaksacyjnego opartego na wzmacniaczach operacyjnych, będącego kluczowym elementem do generowania sygnałów okresowych takich jak prostokątne, trójkątne i piłokształtne. Układ ten znajduje szerokie zastosowanie w systemach pomiarowych i sterujących. Moje rozwiązanie łączy analizę teoretyczną, symulacje oraz praktyczne testy. Skupiłem się na optymalizacji stabilności układu i jakości sygnału, analizując wpływ rzeczywistych niedoskonałości elementów oraz parametrów wzmacniaczy operacyjnych. Efektem jest niezawodny i uniwersalny oscylator, zweryfikowany zarówno w symulacjach, jak i warunkach laboratoryjnych.`,
           buttons: [
             "Full engineering report (PDF)",
             "Simulation measurements (PDF)",
@@ -139,6 +140,46 @@ document.addEventListener("DOMContentLoaded", () => {
             "Pełny raport inżynierski (PDF)",
             "Pomiary symulacyjne (PDF)",
             "Schemat LTSpice",
+          ],
+        },
+        {
+          title: "Smart Door Locker with Microcontroller",
+          title_pl: "Inteligentny zamek drzwiowy z mikrokontrolerem",
+          desc: `A microcontroller-based smart door locker system featuring keypad access, password management, and real-time status indication via LEDs and buzzer. Designed and programmed the embedded system in C++, implemented safety mechanisms, and created a user-friendly interface for configuration. The solution demonstrates practical skills in microcontroller programming, hardware integration, and electronic security.`,
+          desc_pl: `System inteligentnego zamka drzwiowego oparty na mikrokontrolerze, wyposażony w klawiaturę, zarządzanie hasłami oraz sygnalizację stanu za pomocą diod LED i buzzera. Zaprojektowałem i zaprogramowałem system w języku C++, wdrożyłem mechanizmy bezpieczeństwa oraz intuicyjny interfejs do konfiguracji. Projekt pokazuje praktyczne umiejętności w programowaniu mikrokontrolerów, integracji sprzętu i bezpieczeństwie elektronicznym.`,
+          buttons: [
+            "Project overview (PDF)",
+            "View schematic",
+            "Download source code (C++)",
+            "Watch demo video (MP4)",
+            "Listen to project sounds (MP3)",
+            "View the microcontroller used (JPG)",
+            "Built project (photo preview)",
+          ],
+          buttons_pl: [
+            "Opis projektu (PDF)",
+            "Zobacz schemat",
+            "Pobierz kod źródłowy (C++)",
+            "Obejrzyj demo (MP4)",
+            "Posłuchaj dźwięków projektu (MP3)",
+            "Zobacz użyty mikrokontroler (JPG)",
+            "Zdjęcia zbudowanego projektu",
+          ],
+        },
+        {
+          title: "Analog Filter Design in MATLAB",
+          title_pl: "Projektowanie filtrów analogowych w MATLAB",
+          desc: `Designed and simulated analog filters with adjustable component values and selectable circuit topologies. Used MATLAB to generate response curves and amplitude-frequency graphs, allowing for precise analysis and optimization of filter performance. The project demonstrates skills in analog electronics, mathematical modeling, and practical use of simulation tools for engineering design.`,
+          desc_pl: `Projektowałem i symulowałem filtry analogowe z możliwością regulacji wartości elementów oraz wyboru schematu układu. W MATLABie generowałem charakterystyki odpowiedzi i wykresy amplitudowo-częstotliwościowe, co pozwoliło na precyzyjną analizę i optymalizację działania filtrów. Projekt pokazuje umiejętności z zakresu elektroniki analogowej, modelowania matematycznego oraz praktycznego wykorzystania narzędzi symulacyjnych w projektowaniu inżynierskim.`,
+          buttons: [
+            "Project report (PDF)",
+            "MATLAB files and scripts (ZIP)",
+            "Example of program usage (PDF)",
+          ],
+          buttons_pl: [
+            "Raport projektu (PDF)",
+            "Pliki i skrypty MATLAB (ZIP)",
+            "Przykład użycia programu (PDF)",
           ],
         },
         // Dodaj kolejne projekty analogicznie...
@@ -214,8 +255,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           title: "Relaxation Oscillator with Operational Amplifiers",
           title_pl: "Oscylator relaksacyjny na wzmacniaczach operacyjnych",
-          desc: "This project showcases the design and implementation...",
-          desc_pl: "Projekt prezentuje budowę i implementację...",
+          desc: `This project showcases the design and implementation of a relaxation oscillator based on operational amplifiers, a key component for generating periodic signals such as square, triangle, and sawtooth waveforms. Widely used in measurement and control systems, my solution combines theoretical analysis, simulation, and practical testing. I focused on optimizing circuit stability and signal quality, analyzing the impact of real-world component imperfections and operational amplifier parameters. The result is a reliable, versatile oscillator, verified both in simulation and laboratory conditions.`,
+          desc_pl: `Projekt prezentuje budowę i implementację oscylatora relaksacyjnego opartego na wzmacniaczach operacyjnych, będącego kluczowym elementem do generowania sygnałów okresowych takich jak prostokątne, trójkątne i piłokształtne. Układ ten znajduje szerokie zastosowanie w systemach pomiarowych i sterujących. Moje rozwiązanie łączy analizę teoretyczną, symulacje oraz praktyczne testy. Skupiłem się na optymalizacji stabilności układu i jakości sygnału, analizując wpływ rzeczywistych niedoskonałości elementów oraz parametrów wzmacniaczy operacyjnych. Efektem jest niezawodny i uniwersalny oscylator, zweryfikowany zarówno w symulacjach, jak i warunkach laboratoryjnych.`,
           buttons: [
             "Full engineering report (PDF)",
             "Simulation measurements (PDF)",
@@ -225,6 +266,46 @@ document.addEventListener("DOMContentLoaded", () => {
             "Pełny raport inżynierski (PDF)",
             "Pomiary symulacyjne (PDF)",
             "Schemat LTSpice",
+          ],
+        },
+        {
+          title: "Smart Door Locker with Microcontroller",
+          title_pl: "Inteligentny zamek drzwiowy z mikrokontrolerem",
+          desc: `A microcontroller-based smart door locker system featuring keypad access, password management, and real-time status indication via LEDs and buzzer. Designed and programmed the embedded system in C++, implemented safety mechanisms, and created a user-friendly interface for configuration. The solution demonstrates practical skills in microcontroller programming, hardware integration, and electronic security.`,
+          desc_pl: `System inteligentnego zamka drzwiowego oparty na mikrokontrolerze, wyposażony w klawiaturę, zarządzanie hasłami oraz sygnalizację stanu za pomocą diod LED i buzzera. Zaprojektowałem i zaprogramowałem system w języku C++, wdrożyłem mechanizmy bezpieczeństwa oraz intuicyjny interfejs do konfiguracji. Projekt pokazuje praktyczne umiejętności w programowaniu mikrokontrolerów, integracji sprzętu i bezpieczeństwie elektronicznym.`,
+          buttons: [
+            "Project overview (PDF)",
+            "View schematic",
+            "Download source code (C++)",
+            "Watch demo video (MP4)",
+            "Listen to project sounds (MP3)",
+            "View the microcontroller used (JPG)",
+            "Built project (photo preview)",
+          ],
+          buttons_pl: [
+            "Opis projektu (PDF)",
+            "Zobacz schemat",
+            "Pobierz kod źródłowy (C++)",
+            "Obejrzyj demo (MP4)",
+            "Posłuchaj dźwięków projektu (MP3)",
+            "Zobacz użyty mikrokontroler (JPG)",
+            "Zdjęcia zbudowanego projektu",
+          ],
+        },
+        {
+          title: "Analog Filter Design in MATLAB",
+          title_pl: "Projektowanie filtrów analogowych w MATLAB",
+          desc: `Designed and simulated analog filters with adjustable component values and selectable circuit topologies. Used MATLAB to generate response curves and amplitude-frequency graphs, allowing for precise analysis and optimization of filter performance. The project demonstrates skills in analog electronics, mathematical modeling, and practical use of simulation tools for engineering design.`,
+          desc_pl: `Projektowałem i symulowałem filtry analogowe z możliwością regulacji wartości elementów oraz wyboru schematu układu. W MATLABie generowałem charakterystyki odpowiedzi i wykresy amplitudowo-częstotliwościowe, co pozwoliło na precyzyjną analizę i optymalizację działania filtrów. Projekt pokazuje umiejętności z zakresu elektroniki analogowej, modelowania matematycznego oraz praktycznego wykorzystania narzędzi symulacyjnych w projektowaniu inżynierskim.`,
+          buttons: [
+            "Project report (PDF)",
+            "MATLAB files and scripts (ZIP)",
+            "Example of program usage (PDF)",
+          ],
+          buttons_pl: [
+            "Raport projektu (PDF)",
+            "Pliki i skrypty MATLAB (ZIP)",
+            "Przykład użycia programu (PDF)",
           ],
         },
         // Dodaj kolejne projekty analogicznie...
@@ -280,19 +361,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Funkcja główna tłumaczenia
   function setLanguage(lang) {
+    // Nagłówek
     document.querySelector("header h1").innerHTML = translations[lang].header;
-    translateAboutButtons(lang);
-    translateProjects(lang);
-    document.getElementById("oscillator-desc").textContent =
-      translations[lang].oscillator_desc;
 
-    // Tłumaczenie przycisków nawigacyjnych
+    // Nawigacja
     document.getElementById("nav-about").textContent =
       translations[lang].nav[0];
     document.getElementById("nav-projects").textContent =
       translations[lang].nav[1];
     document.getElementById("nav-contact").textContent =
       translations[lang].nav[2];
+
+    // Przycisk sekcji About Me
+    translateAboutButtons(lang);
+
+    // Projekty
+    translateProjects(lang);
+
+    // About Me
+    document.querySelector("#about h2").textContent =
+      translations[lang].about_h2;
+    document.querySelector(".about-description p").innerHTML =
+      translations[lang].about;
+
+    // Wykształcenie
+    document.querySelector("#education h2").textContent =
+      translations[lang].education_h2;
+    const eduList = document.querySelectorAll(".education-list li");
+    translations[lang].education.forEach((txt, i) => {
+      if (eduList[i]) eduList[i].innerHTML = txt;
+    });
+
+    // Umiejętności
+    document.querySelector("#skills h2").textContent =
+      translations[lang].skills_h2;
+    const skillList = document.querySelectorAll(".skills-list li");
+    translations[lang].skills.forEach((txt, i) => {
+      if (skillList[i]) skillList[i].textContent = txt;
+    });
+
+    // Doświadczenie
+    document.querySelector("#experience h2").textContent =
+      translations[lang].experience_h2;
+    document.querySelector("#experience p").innerHTML =
+      translations[lang].experience_p;
+    const expList = document.querySelectorAll(".experience-list li");
+    translations[lang].experience.forEach((txt, i) => {
+      if (expList[i]) expList[i].innerHTML = txt;
+    });
+
+    // Zainteresowania
+    document.querySelector("#interests h2").textContent =
+      translations[lang].interests_h2;
+    document.querySelector("#interests p").innerHTML =
+      translations[lang].interests;
+
+    // Ulubione zdjęcia
+    document.querySelector("#photos h2").textContent =
+      translations[lang].photos_h2;
   }
 
   // Obsługa kliknięcia flag
