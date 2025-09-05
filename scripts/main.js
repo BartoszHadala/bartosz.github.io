@@ -95,4 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
       experienceSection.scrollIntoView({ behavior: "smooth" });
     });
   }
+
+  // Show Interests section
+  const showInterestsBtn = document.getElementById("show-interests-btn");
+  const interestsSection = document.getElementById("interests");
+  if (showInterestsBtn && interestsSection) {
+    showInterestsBtn.addEventListener("click", () => {
+      interestsSection.style.display = "block";
+      showInterestsBtn.style.display = "none";
+      interestsSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 });
