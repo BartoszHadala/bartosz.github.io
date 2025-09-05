@@ -37,6 +37,18 @@ header h1 {
   }
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(18, 22, 41, 0.92);
+  box-shadow: 0 2px 16px rgba(56, 189, 248, 0.12);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #38bdf8;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -287,10 +299,10 @@ footer {
 }
 
 .project-card ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2.2rem;
+  justify-items: center;
   padding: 0;
   margin-top: 1.5rem;
   list-style: none;
@@ -306,10 +318,11 @@ footer {
 
 .project-card ul a,
 .project-link {
-  width: 420px;
+  width: 320px;
   max-width: 90vw;
   text-align: center;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .project-card ul a {
@@ -579,6 +592,14 @@ a:hover .project-btn {
     max-width: 350px;
     max-height: 350px;
     object-fit: contain;
+  }
+  .project-card ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-link {
+    width: 98vw;
+    max-width: 350px;
   }
 }
 
