@@ -167,6 +167,8 @@ footer {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   display: inline-block;
+  min-width: 320px;
+  text-align: center;
 }
 .show-photos-btn:hover,
 .show-education-btn:hover,
@@ -360,6 +362,8 @@ footer {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   display: inline-block;
+  min-width: 320px;
+  text-align: center;
 }
 
 .show-education-btn:last-child,
@@ -386,6 +390,8 @@ footer {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   display: inline-block;
+  min-width: 320px;
+  text-align: center;
 }
 
 .show-skills-btn:hover {
