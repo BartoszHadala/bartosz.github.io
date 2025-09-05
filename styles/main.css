@@ -26,6 +26,7 @@ header h1 {
   border-radius: 16px;
   font-family: "Montserrat", serif;
   animation: neon 2s infinite alternate;
+  white-space: nowrap; /* Dodaj tę linię */
 }
 
 @keyframes neon {
@@ -559,8 +560,8 @@ a:hover .project-btn {
     border-radius: 16px;
   }
   header h1 {
-    font-size: 2rem;
-    padding: 0.2em 0.7em;
+    font-size: 1.6rem; /* Zmniejsz czcionkę na mniejszych ekranach */
+    padding: 0.1em 0.3em;
   }
   h2 {
     font-size: 1.3rem;
