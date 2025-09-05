@@ -336,8 +336,12 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("show-interests-btn"),
       document.getElementById("show-photos-btn"),
     ];
+    const labels =
+      lang === "pl"
+        ? translations.pl.about_buttons_pl
+        : translations.en.about_buttons;
     aboutBtns.forEach((btn, i) => {
-      if (btn) btn.textContent = translations[lang].about_buttons[i];
+      if (btn && labels[i]) btn.textContent = labels[i];
     });
   }
 
