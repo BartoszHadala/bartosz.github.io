@@ -413,54 +413,25 @@ footer {
   margin-top: 1.5rem;
   font-size: 1.12rem;
   color: #eaf2fb;
-  list-style: none;
+  list-style: disc inside;
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
+  display: block;
 }
 
 .skills-list li {
-  background: linear-gradient(90deg, #38bdf8 60%, #232946 100%);
-  color: #fff;
-  padding: 0.7em 1.4em;
-  border-radius: 22px;
-  font-weight: 600;
-  font-size: 1.08rem;
-  box-shadow: 0 2px 12px rgba(56, 189, 248, 0.18);
-  letter-spacing: 0.5px;
-  margin-bottom: 0.5em;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-  position: relative;
-  overflow: hidden;
-}
-
-.skills-list li::after {
-  content: "";
-  position: absolute;
-  left: -100%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(56, 189, 248, 0.25);
-  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 0;
-}
-
-.skills-list li:hover {
-  background: linear-gradient(90deg, #232946 60%, #38bdf8 100%);
-  color: #38bdf8;
-  transform: scale(1.07) rotate(-2deg);
-  box-shadow: 0 4px 24px #38bdf8;
-}
-
-.skills-list li:hover::after {
-  left: 0;
-}
-
-.skills-list li {
-  z-index: 1;
+  margin-bottom: 0.7rem;
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: inherit;
+  box-shadow: none;
+  letter-spacing: normal;
+  cursor: default;
+  transition: none;
+  position: static;
+  overflow: visible;
 }
 
 .education-list {
