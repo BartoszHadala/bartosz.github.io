@@ -151,7 +151,8 @@ footer {
 .show-photos-btn,
 .show-education-btn,
 .show-skills-btn,
-.show-experience-btn {
+.show-experience-btn,
+.show-interests-btn {
   margin-top: 1.5rem;
   margin-right: 1rem;
   padding: 0.7rem 2rem;
@@ -168,7 +169,8 @@ footer {
 .show-photos-btn:hover,
 .show-education-btn:hover,
 .show-skills-btn:hover,
-.show-experience-btn:hover {
+.show-experience-btn:hover,
+.show-interests-btn:hover {
   background: #38bdf8;
   color: #232946;
 }
