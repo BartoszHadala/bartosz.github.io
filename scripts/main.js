@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("1"); // Dodano do weryfikacji aktualności strony
+  console.log("2"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
@@ -362,15 +362,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Funkcja główna tłumaczenia
   function setLanguage(lang) {
     // Nagłówek
-    document.querySelector("header h1").innerHTML = translations[lang].header;
+    const headerH1 = document.querySelector("header h1");
+    if (headerH1) headerH1.innerHTML = translations[lang].header;
 
     // Nawigacja
-    document.getElementById("nav-about").textContent =
-      translations[lang].nav[0];
-    document.getElementById("nav-projects").textContent =
-      translations[lang].nav[1];
-    document.getElementById("nav-contact").textContent =
-      translations[lang].nav[2];
+    const navAbout = document.getElementById("nav-about");
+    if (navAbout) navAbout.textContent = translations[lang].nav[0];
+    const navProjects = document.getElementById("nav-projects");
+    if (navProjects) navProjects.textContent = translations[lang].nav[1];
+    const navContact = document.getElementById("nav-contact");
+    if (navContact) navContact.textContent = translations[lang].nav[2];
 
     // Przycisk sekcji About Me
     translateAboutButtons(lang);
@@ -379,46 +380,47 @@ document.addEventListener("DOMContentLoaded", () => {
     translateProjects(lang);
 
     // About Me
-    document.querySelector("#about h2").textContent =
-      translations[lang].about_h2;
-    document.querySelector(".about-description p").innerHTML =
-      translations[lang].about;
+    const aboutH2 = document.querySelector("#about h2");
+    if (aboutH2) aboutH2.textContent = translations[lang].about_h2;
+    const aboutDesc = document.querySelector(".about-description p");
+    if (aboutDesc) aboutDesc.innerHTML = translations[lang].about;
 
     // Wykształcenie
-    document.querySelector("#education h2").textContent =
-      translations[lang].education_h2;
+    const educationH2 = document.querySelector("#education h2");
+    if (educationH2) educationH2.textContent = translations[lang].education_h2;
     const eduList = document.querySelectorAll(".education-list li");
     translations[lang].education.forEach((txt, i) => {
       if (eduList[i]) eduList[i].innerHTML = txt;
     });
 
     // Umiejętności
-    document.querySelector("#skills h2").textContent =
-      translations[lang].skills_h2;
+    const skillsH2 = document.querySelector("#skills h2");
+    if (skillsH2) skillsH2.textContent = translations[lang].skills_h2;
     const skillList = document.querySelectorAll(".skills-list li");
     translations[lang].skills.forEach((txt, i) => {
       if (skillList[i]) skillList[i].textContent = txt;
     });
 
     // Doświadczenie
-    document.querySelector("#experience h2").textContent =
-      translations[lang].experience_h2;
-    document.querySelector("#experience p").innerHTML =
-      translations[lang].experience_p;
+    const experienceH2 = document.querySelector("#experience h2");
+    if (experienceH2)
+      experienceH2.textContent = translations[lang].experience_h2;
+    const experienceP = document.querySelector("#experience p");
+    if (experienceP) experienceP.innerHTML = translations[lang].experience_p;
     const expList = document.querySelectorAll(".experience-list li");
     translations[lang].experience.forEach((txt, i) => {
       if (expList[i]) expList[i].innerHTML = txt;
     });
 
     // Zainteresowania
-    document.querySelector("#interests h2").textContent =
-      translations[lang].interests_h2;
-    document.querySelector("#interests p").innerHTML =
-      translations[lang].interests;
+    const interestsH2 = document.querySelector("#interests h2");
+    if (interestsH2) interestsH2.textContent = translations[lang].interests_h2;
+    const interestsP = document.querySelector("#interests p");
+    if (interestsP) interestsP.innerHTML = translations[lang].interests;
 
     // Ulubione zdjęcia
-    document.querySelector("#photos h2").textContent =
-      translations[lang].photos_h2;
+    const photosH2 = document.querySelector("#photos h2");
+    if (photosH2) photosH2.textContent = translations[lang].photos_h2;
   }
 
   // Obsługa kliknięcia flag
