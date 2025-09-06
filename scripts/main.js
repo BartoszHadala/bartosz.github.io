@@ -2,6 +2,36 @@
 // You can add functionality such as interactive elements, animations, or form handling here.
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Mapowanie przycisków do sekcji
+  const sectionMap = [
+    { btn: "show-education-btn", section: "education" },
+    { btn: "show-skills-btn", section: "skills" },
+    { btn: "show-experience-btn", section: "experience" },
+    { btn: "show-interests-btn", section: "interests" },
+    { btn: "show-photos-btn", section: "photos" },
+  ];
+
+  // Dodaj obsługę kliknięcia dla każdego przycisku
+  sectionMap.forEach(({ btn, section }) => {
+    const button = document.getElementById(btn);
+    const sec = document.getElementById(section);
+    if (button && sec) {
+      button.addEventListener("click", () => {
+        // Przełącz widoczność sekcji
+        sec.style.display =
+          sec.style.display === "none" || sec.style.display === ""
+            ? "block"
+            : "none";
+      });
+    }
+  });
+
+  // Opcjonalnie: domyślnie ukryj wszystkie sekcje
+  sectionMap.forEach(({ section }) => {
+    const sec = document.getElementById(section);
+    if (sec) sec.style.display = "none";
+  });
+
   // Example: Smooth scrolling for anchor links
   const links = document.querySelectorAll('a[href^="#"]');
   links.forEach((link) => {
@@ -15,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("5"); // Dodano do weryfikacji aktualności strony
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
