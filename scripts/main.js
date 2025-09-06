@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("3"); // Dodano do weryfikacji aktualności strony
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
           desc_pl: `System inteligentnego zamka drzwiowego oparty na mikrokontrolerze, wyposażony w klawiaturę, zarządzanie hasłami oraz sygnalizację stanu za pomocą diod LED i buzzera. Zaprojektowałem i zaprogramowałem system w języku C++, wdrożyłem mechanizmy bezpieczeństwa oraz intuicyjny interfejs do konfiguracji. Projekt pokazuje praktyczne umiejętności w programowaniu mikrokontrolerów, integracji sprzętu i bezpieczeństwie elektronicznym.`,
           buttons: [
             "Project overview (PDF)",
-            "View schematic",
+            "View schematic (JPG)",
             "Download source code (C++)",
             "Watch demo video (MP4)",
             "See project (JPG)",
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
           buttons_pl: [
             "Opis projektu (PDF)",
-            "Zobacz schemat",
+            "Zobacz schemat (JPG)",
             "Pobierz kod źródłowy (C++)",
             "Obejrzyj demo (MP4)",
             "Zobacz projekt (JPG)",
