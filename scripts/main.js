@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("11"); // Dodano do weryfikacji aktualności strony
+  console.log("12"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
@@ -427,6 +427,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ulubione zdjęcia
     const photosH2 = document.querySelector("#photos h2");
     if (photosH2) photosH2.textContent = translations[lang].photos_h2;
+  }
+
+  // Hamburger menu
+  const hamburger = document.getElementById("hamburger");
+  const navList = document.getElementById("nav-list");
+  if (hamburger && navList) {
+    hamburger.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+    // Zamknij menu po kliknięciu linku
+    navList.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("active");
+      });
+    });
   }
 
   // Obsługa kliknięcia flag
