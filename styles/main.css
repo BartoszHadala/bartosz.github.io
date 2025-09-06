@@ -176,42 +176,6 @@ footer {
   margin-top: 3rem;
 }
 
-/* Unified button styles */
-.show-photos-btn,
-.show-education-btn,
-.show-skills-btn,
-.show-experience-btn,
-.show-interests-btn {
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.08);
-  border: 2px solid #38bdf8;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  display: inline-block;
-  min-width: 320px;
-  text-align: center;
-}
-.show-photos-btn:hover,
-.show-education-btn:hover,
-.show-skills-btn:hover,
-.show-experience-btn:hover,
-.show-interests-btn:hover {
-  background: #38bdf8;
-  color: #232946;
-}
-.show-education-btn:last-child,
-.show-photos-btn:last-child,
-.show-skills-btn:last-child,
-.show-experience-btn:last-child {
-  margin-right: 0;
-}
-
 /* Gallery styles */
 .photos-gallery {
   display: flex;
@@ -370,75 +334,6 @@ footer {
   content: "📄";
   font-size: 1.2em;
   margin-right: 0.3em;
-}
-
-.show-photos-btn {
-  margin-top: 1.5rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.08);
-  border: 2px solid #38bdf8;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  display: inline-block;
-}
-
-.show-photos-btn:hover {
-  background: #38bdf8;
-  color: #232946;
-}
-
-.show-education-btn {
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.08);
-  border: 2px solid #38bdf8;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  display: inline-block;
-  min-width: 320px;
-  text-align: center;
-}
-
-.show-education-btn:last-child,
-.show-photos-btn:last-child {
-  margin-right: 0;
-}
-
-.show-education-btn:hover,
-.show-photos-btn:hover {
-  background: #38bdf8;
-  color: #232946;
-}
-
-.show-skills-btn {
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.08);
-  border: 2px solid #38bdf8;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  display: inline-block;
-  min-width: 320px;
-  text-align: center;
-}
-
-.show-skills-btn:hover {
-  background: #38bdf8;
-  color: #232946;
 }
 
 .skills {
