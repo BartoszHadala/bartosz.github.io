@@ -169,11 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "See My Favorite Photos",
       ],
       about_buttons_pl: [
-        "Zobacz moje wykształcenie",
-        "Zobacz moje umiejętności",
-        "Zobacz moje doświadczenie",
-        "Zobacz moje zainteresowania",
-        "Zobacz ulubione zdjęcia",
+        "Moje wykształcenie",
+        "Moje umiejętności",
+        "Moje doświadczenie",
+        "Moje zainteresowania",
+        "Ulubione zdjęcia",
       ],
     },
     en: {
