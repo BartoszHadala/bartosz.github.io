@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
   <body>
-    <header>
+    <header class="reveal">
       <div class="language-switcher">
         <img
           src="assets/flag-pl.png"
@@ -25,30 +25,26 @@
           title="English"
         />
       </div>
-      <h1>Bartosz Hadala – Electronics and Telecommunications Student</h1>
+      <h1 class="reveal">Bartosz Hadala – Electronics and Telecommunications Student</h1>
         <span></span>
         <span></span>
         <span></span>
       </button>
     </header>
-    <nav>
-      <ul id="nav-list">
-        <li><a id="nav-about" href="#about">About Me</a></li>
-        <li><a id="nav-projects" href="#projects">Projects</a></li>
-        <li><a id="nav-contact" href="#contact">Contact</a></li>
+    <nav class="reveal">
+      <ul id="nav-list" class="reveal">
+        <li><a id="nav-about" href="#about" class="reveal">About Me</a></li>
+        <li><a id="nav-projects" href="#projects" class="reveal">Projects</a></li>
+        <li><a id="nav-contact" href="#contact" class="reveal">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-          <img
-            src="assets/profile.jpg"
-            alt="Bartosz Hadala"
-            class="profile-photo"
-          />
-          <div class="about-description">
-            <p>
+      <section id="about" class="reveal">
+        <h2 class="reveal">About Me</h2>
+        <div class="about-container reveal">
+          <img src="assets/profile.jpg" alt="Bartosz Hadala" class="profile-photo reveal" />
+          <div class="about-description reveal">
+            <p class="reveal">
               Hi! My name is Bartosz Hadala and I am a student of Electronics
               and Telecommunications at AGH University of Science and Technology
               in Krakow.
@@ -62,35 +58,35 @@
               where I collaborate on innovative electronics projects and expand
               my practical skills.
             </p>
-            <button id="show-education-btn" class="about-btn" type="button">
+            <button id="show-education-btn" class="about-btn reveal" type="button">
               See My Education
             </button>
-            <button id="show-skills-btn" class="about-btn" type="button">
+            <button id="show-skills-btn" class="about-btn reveal" type="button">
               See My Skills
             </button>
-            <button id="show-experience-btn" class="about-btn" type="button">
+            <button id="show-experience-btn" class="about-btn reveal" type="button">
               See My Experience
             </button>
-            <button id="show-interests-btn" class="about-btn" type="button">
+            <button id="show-interests-btn" class="about-btn reveal" type="button">
               See My Interests
             </button>
-            <button id="show-photos-btn" class="about-btn" type="button">
+            <button id="show-photos-btn" class="about-btn reveal" type="button">
               See My Favorite Photos
             </button>
           </div>
         </div>
       </section>
 
-      <section id="education" style="display: none">
-        <h2>My Education</h2>
-        <ul class="education-list">
-          <li>
+      <section id="education" class="reveal" style="display: none">
+        <h2 class="reveal">My Education</h2>
+        <ul class="education-list reveal">
+          <li class="reveal">
             <strong>AGH University of Science and Technology, Krakow</strong
             ><br />
             Electronics and Telecommunications, Engineering Degree<br />
             2023 – present
           </li>
-          <li>
+          <li class="reveal">
             <strong>High School in Krynica-Zdrój</strong><br />
             IT Technician, graduated with distinction (Prime Minister's
             Award)<br />
@@ -99,39 +95,39 @@
         </ul>
       </section>
 
-      <section id="skills" style="display: none">
-        <h2>My Skills</h2>
-        <ul class="skills-list">
-          <li>Circuit Analysis</li>
-          <li>Simulations of electronic circuits (LTSpice, PSpice)</li>
-          <li>
+      <section id="skills" class="reveal" style="display: none">
+        <h2 class="reveal">My Skills</h2>
+        <ul class="skills-list reveal">
+          <li class="reveal">Circuit Analysis</li>
+          <li class="reveal">Simulations of electronic circuits (LTSpice, PSpice)</li>
+          <li class="reveal">
             Microcontroller and FPGA architecture (Verilog, Assembler, Vivado,
             Microchip Studio)
           </li>
-          <li>
+          <li class="reveal">
             Digital & analog signal simulation and processing, filters and
             modulations (Matlab, Julia)
           </li>
-          <li>Programming: C++, Git, JavaScript, PHP, SQL, HTML, CSS</li>
-          <li>
+          <li class="reveal">Programming: C++, Git, JavaScript, PHP, SQL, HTML, CSS</li>
+          <li class="reveal">
             Development tools: Visual Studio Code, CodeBlocks, Github,
             phpMyAdmin
           </li>
-          <li>
+          <li class="reveal">
             Operating systems: Windows, Windows Server, Linux, Linux Server
           </li>
-          <li>Computer networks (Cisco Packet Tracer)</li>
-          <li>Soldering electronic components</li>
-          <li>INF.02, INF.03 certificates</li>
-          <li>ECDL certificate</li>
-          <li>Languages: Polish, English</li>
-          <li>Driving license: category B</li>
+          <li class="reveal">Computer networks (Cisco Packet Tracer)</li>
+          <li class="reveal">Soldering electronic components</li>
+          <li class="reveal">INF.02, INF.03 certificates</li>
+          <li class="reveal">ECDL certificate</li>
+          <li class="reveal">Languages: Polish, English</li>
+          <li class="reveal">Driving license: category B</li>
         </ul>
       </section>
 
-      <section id="experience" style="display: none">
-        <h2>My Experience</h2>
-        <p>
+      <section id="experience" class="reveal" style="display: none">
+        <h2 class="reveal">My Experience</h2>
+        <p class="reveal">
           Since 2018, I have worked in industries not directly related to my
           field, continuously developing valuable skills outside of electronics
           and IT.
@@ -145,8 +141,8 @@
           This journey has made me a versatile and motivated individual, ready
           to take on new challenges in electronics and technology.
         </p>
-        <ul class="experience-list">
-          <li>
+        <ul class="experience-list reveal">
+          <li class="reveal">
             <strong
               >Internship – Advertising & Leaflet Production Company</strong
             ><br />
@@ -157,9 +153,9 @@
         </ul>
       </section>
 
-      <section id="interests" style="display: none">
-        <h2>My Interests</h2>
-        <p>
+      <section id="interests" class="reveal" style="display: none">
+        <h2 class="reveal">My Interests</h2>
+        <p class="reveal">
           I am deeply passionate about modern electronics and embedded systems.
           I enjoy exploring the world of microcontrollers, automation, signal
           processing, and modulation techniques, constantly expanding my
@@ -181,27 +177,27 @@
         </p>
       </section>
 
-      <section id="photos" style="display: none">
-        <h2>My Favorite Photos</h2>
-        <div class="photos-gallery">
-          <img src="assets/photo1.jpg" alt="Mountain landscape" />
-          <img src="assets/photo2.jpg" alt="Electronics project" />
-          <img src="assets/photo3.jpg" alt="City at night" />
-          <img src="assets/photo4.jpg" alt="Lab experiment" />
-          <img src="assets/photo7.jpg" alt="Nature close-up" />
-          <img src="assets/photo6.jpg" alt="AGH University" />
-          <img src="assets/photo5.jpg" alt="Microcontroller board" />
-          <img src="assets/photo8.jpg" alt="Soldering station" />
-          <img src="assets/photo9.jpg" alt="Winter in Krynica-Zdrój" />
+      <section id="photos" class="reveal" style="display: none">
+        <h2 class="reveal">My Favorite Photos</h2>
+        <div class="photos-gallery reveal">
+          <img src="assets/photo1.jpg" alt="Mountain landscape" class="reveal" />
+          <img src="assets/photo2.jpg" alt="Electronics project" class="reveal" />
+          <img src="assets/photo3.jpg" alt="City at night" class="reveal" />
+          <img src="assets/photo4.jpg" alt="Lab experiment" class="reveal" />
+          <img src="assets/photo7.jpg" alt="Nature close-up" class="reveal" />
+          <img src="assets/photo6.jpg" alt="AGH University" class="reveal" />
+          <img src="assets/photo5.jpg" alt="Microcontroller board" class="reveal" />
+          <img src="assets/photo8.jpg" alt="Soldering station" class="reveal" />
+          <img src="assets/photo9.jpg" alt="Winter in Krynica-Zdrój" class="reveal" />
         </div>
       </section>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-list">
-          <div class="project-card">
-            <h3>Relaxation Oscillator with Operational Amplifiers</h3>
-            <p id="oscillator-desc">
+      <section id="projects" class="reveal">
+        <h2 class="reveal">My Projects</h2>
+        <div class="projects-list reveal">
+          <div class="project-card reveal">
+            <h3 class="reveal">Relaxation Oscillator with Operational Amplifiers</h3>
+            <p class="reveal">
               This project showcases the design and implementation of a
               relaxation oscillator based on operational amplifiers, a key
               component for generating periodic signals such as square,
@@ -214,38 +210,20 @@
               simulation and laboratory conditions.
             </p>
             <ul>
-              <li>
-                <a
-                  class="project-link"
-                  href="assets/relaxation-oscillator-report.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Full engineering report (PDF)</a
-                >
+              <li class="reveal">
+                <a class="project-link reveal" href="assets/relaxation-oscillator-report.pdf" target="_blank" rel="noopener noreferrer">Full engineering report (PDF)</a>
               </li>
-              <li>
-                <a
-                  class="project-link"
-                  href="assets/measurements.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Simulation measurements (PDF)</a
-                >
+              <li class="reveal">
+                <a class="project-link reveal" href="assets/measurements.pdf" target="_blank" rel="noopener noreferrer">Simulation measurements (PDF)</a>
               </li>
-              <li>
-                <a
-                  class="project-link"
-                  href="assets/ltspice-schematic.asc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LTSpice schematic</a
-                >
+              <li class="reveal">
+                <a class="project-link reveal" href="assets/ltspice-schematic.asc" target="_blank" rel="noopener noreferrer">LTSpice schematic</a>
               </li>
             </ul>
           </div>
-          <div class="project-card">
-            <h3>Smart Door Locker Project (ATmega Based)</h3>
-            <p>
+          <div class="project-card reveal">
+            <h3 class="reveal">Smart Door Locker Project (ATmega Based)</h3>
+            <p class="reveal">
               Developed a secure and intelligent door locking system using an
               ATmega microcontroller. The project features keypad access,
               password management, and real-time status indication via LEDs and
@@ -256,9 +234,9 @@
               electronic security.
             </p>
             <ul>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-overview.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -266,9 +244,9 @@
                   Project overview: goal, functionality, used components (PDF)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-schematic.jpg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -276,18 +254,18 @@
                   View schematic
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-code.cpp"
                   download
                 >
                   Download source code (C++)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-demo.mp4"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -295,9 +273,9 @@
                   Watch demo video (MP4)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-photos.jpg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -305,9 +283,9 @@
                   Built project (photo preview)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/smart-door-locker-microcontroller.jpg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -317,9 +295,9 @@
               </li>
             </ul>
           </div>
-          <div class="project-card">
-            <h3>Analog Filter Design</h3>
-            <p>
+          <div class="project-card reveal">
+            <h3 class="reveal">Analog Filter Design</h3>
+            <p class="reveal">
               Designed and simulated analog filters with adjustable component
               values and selectable circuit topologies. Used MATLAB to generate
               response curves and amplitude-frequency graphs, allowing for
@@ -329,9 +307,9 @@
               design.
             </p>
             <ul>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/analog-filter-design-report.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -339,9 +317,9 @@
                   Project report (PDF)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/analog-filter-matlab-files.zip"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -349,9 +327,9 @@
                   MATLAB files and scripts (ZIP)
                 </a>
               </li>
-              <li>
+              <li class="reveal">
                 <a
-                  class="project-link"
+                  class="project-link reveal"
                   href="assets/analog-filter-example.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -363,29 +341,20 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:hadalabartosz@gmail.com">hadalabartosz@gmail.com</a>
+      <section id="contact" class="reveal">
+        <h2 class="reveal">Contact</h2>
+        <div class="contact-info reveal">
+          <p class="reveal">
+            <strong class="reveal">Email:</strong> <a class="reveal" href="mailto:hadalabartosz@gmail.com">hadalabartosz@gmail.com</a>
           </p>
-          <p>
-            <strong>Phone:</strong>
-            <a href="tel:+48575121605">+48 575 121 605</a>
+          <p class="reveal">
+            <strong class="reveal">Phone:</strong> <a class="reveal" href="tel:+48575121605">+48 575 121 605</a>
           </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/bartosz-hada%C5%82a-a934a6340/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/bartoszhadala
-            </a>
+          <p class="reveal">
+            <strong class="reveal">LinkedIn:</strong> <a class="reveal" href="https://www.linkedin.com/in/bartosz-hada%C5%82a-a934a6340/" target="_blank" rel="noopener noreferrer">linkedin.com/in/bartoszhadala</a>
           </p>
-          <p><strong>City:</strong> Krakow</p>
-          <p>
+          <p class="reveal"><strong>City:</strong> Krakow</p>
+          <p class="reveal">
             <strong>CV:</strong>
             <a
               href="assets/BartoszHadala_CV.pdf"

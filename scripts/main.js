@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("xd"); // Dodano do weryfikacji aktualności strony
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
