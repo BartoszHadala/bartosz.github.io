@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
           sec.style.display === "none" || sec.style.display === ""
             ? "block"
             : "none";
+        if (sec.style.display === "block") {
+          sec.scrollIntoView({ behavior: "smooth" });
+        }
       });
     }
   });
@@ -45,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("12"); // Dodano do weryfikacji aktualności strony
+  console.log("2"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
