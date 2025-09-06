@@ -488,31 +488,6 @@ a:hover .project-btn {
   box-shadow: 0 4px 32px #38bdf8;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 200;
-  position: absolute;
-  top: 18px;
-  left: 18px;
-}
-.hamburger span {
-  display: block;
-  width: 32px;
-  height: 4px;
-  margin: 5px 0;
-  background: #38bdf8;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -524,10 +499,6 @@ a:hover .project-btn {
   transform: none;
 }
 
-@media (max-width: 600px) {
-  .hamburger {
-    display: flex;
-  }
   nav ul {
     display: none;
     flex-direction: column;
@@ -621,6 +592,10 @@ a:hover .project-btn {
     gap: 1rem;
     padding: 0;
     margin: 0;
+    background: rgba(18, 22, 41, 0.98);
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
   }
   nav ul li {
     width: 100%;
