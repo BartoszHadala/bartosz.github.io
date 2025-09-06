@@ -341,8 +341,9 @@ footer {
 }
 
 .project-card ul a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center; /* WYŚRODKOWANIE TEKSTU */
   gap: 0.5em;
   padding: 0.8em 1.6em;
   font-size: 1.08rem;
