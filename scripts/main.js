@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("12"); // Dodano do weryfikacji aktualności strony
+  console.log("xd"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
@@ -451,4 +451,18 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("lang-en")
     .addEventListener("click", () => setLanguage("en"));
+
+  // Scroll reveal dla tekstu About Me
+  const aboutDesc = document.querySelector(".about-description p");
+  if (aboutDesc) {
+    aboutDesc.classList.add("reveal");
+    const revealOnScroll = () => {
+      const rect = aboutDesc.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        aboutDesc.classList.add("visible");
+      }
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  }
 });

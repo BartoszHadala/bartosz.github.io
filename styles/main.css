@@ -513,6 +513,17 @@ a:hover .project-btn {
   transition: 0.3s;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.5, 0.2, 0.2, 1),
+    transform 0.8s cubic-bezier(0.5, 0.2, 0.2, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
 @media (max-width: 600px) {
   .hamburger {
     display: flex;
