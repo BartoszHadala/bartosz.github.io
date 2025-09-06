@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Opcjonalnie: domyślnie ukryj wszystkie sekcje
+  // Opcjonalnie: domyślnie ukry    j wszystkie sekcje
   sectionMap.forEach(({ section }) => {
     const sec = document.getElementById(section);
     if (sec) sec.style.display = "none";
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("21"); // Dodano do weryfikacji aktualności strony
+  console.log("1"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
@@ -169,11 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "See My Favorite Photos",
       ],
       about_buttons_pl: [
-        "Zobacz moje wykształcenie",
-        "Zobacz moje umiejętności",
-        "Zobacz moje doświadczenie",
-        "Zobacz moje zainteresowania",
-        "Zobacz ulubione zdjęcia",
+        "Moje wykształcenie",
+        "Moje umiejętności",
+        "Moje doświadczenie",
+        "Moje zainteresowania",
+        "Ulubione zdjęcia",
       ],
     },
     en: {
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Zobacz schemat",
             "Pobierz kod źródłowy (C++)",
             "Obejrzyj demo (MP4)",
-            "Posłuchaj dźwięków projektu (MP3)",
+            "Zobacz wykonanie (JPG)",
             "Zobacz użyty mikrokontroler (JPG)",
             "Zdjęcia zbudowanego projektu",
           ],
