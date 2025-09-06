@@ -658,9 +658,24 @@ a:hover .project-btn {
     padding-bottom: 0.1rem;
   }
   nav ul {
-    gap: 0.2rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+  nav a {
+    width: 90vw;
+    min-width: 180px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
   .profile-photo {
     width: 80px;
@@ -673,5 +688,15 @@ a:hover .project-btn {
     max-width: 220px;
     max-height: 220px;
     object-fit: contain;
+  }
+  .project-card ul a,
+  .project-link {
+    width: 96vw;
+    max-width: 96vw;
+    min-width: 0;
+    font-size: 0.98rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    box-sizing: border-box;
   }
 }
