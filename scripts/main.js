@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("1"); // Dodano do weryfikacji aktualności strony
+  console.log("12"); // Dodano do weryfikacji aktualności strony
 
   // Show Education section
   const showEducationBtn = document.getElementById("show-education-btn");
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showEducationBtn && educationSection) {
     showEducationBtn.addEventListener("click", () => {
       educationSection.style.display = "block";
-      showEducationBtn.style.display = "none";
       educationSection.scrollIntoView({ behavior: "smooth" });
     });
   }
@@ -64,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showSkillsBtn && skillsSection) {
     showSkillsBtn.addEventListener("click", () => {
       skillsSection.style.display = "block";
-      showSkillsBtn.style.display = "none";
       skillsSection.scrollIntoView({ behavior: "smooth" });
     });
   }
@@ -75,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showPhotosBtn && photosSection) {
     showPhotosBtn.addEventListener("click", () => {
       photosSection.style.display = "block";
-      showPhotosBtn.style.display = "none";
       photosSection.scrollIntoView({ behavior: "smooth" });
     });
   }
@@ -86,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showExperienceBtn && experienceSection) {
     showExperienceBtn.addEventListener("click", () => {
       experienceSection.style.display = "block";
-      showExperienceBtn.style.display = "none";
       experienceSection.scrollIntoView({ behavior: "smooth" });
     });
   }
@@ -97,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (showInterestsBtn && interestsSection) {
     showInterestsBtn.addEventListener("click", () => {
       interestsSection.style.display = "block";
-      showInterestsBtn.style.display = "none";
       interestsSection.scrollIntoView({ behavior: "smooth" });
     });
   }
