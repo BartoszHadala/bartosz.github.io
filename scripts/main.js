@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("1"); // Dodano do weryfikacji aktualności strony
+  console.log("2"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "View schematic",
             "Download source code (C++)",
             "Watch demo video (MP4)",
-            "Listen to project sounds (MP3)",
+            "See project (JPG)",
             "View the microcontroller used (JPG)",
             "Built project (photo preview)",
           ],
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Zobacz schemat",
             "Pobierz kod źródłowy (C++)",
             "Obejrzyj demo (MP4)",
-            "Posłuchaj dźwięków projektu (MP3)",
+            "Zobacz projekt (JPG)",
             "Zobacz użyty mikrokontroler (JPG)",
             "Zdjęcia zbudowanego projektu",
           ],

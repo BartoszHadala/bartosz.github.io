@@ -568,6 +568,11 @@ a:hover .project-btn {
 }
 
 .about-btn {
+  min-width: 260px;
+  max-width: 100%;
+  width: 260px;
+  display: inline-block;
+  text-align: center;
   padding: 0.7rem 2rem;
   margin: 0.5rem 1rem;
   font-size: 1.1rem;
