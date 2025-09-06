@@ -494,6 +494,31 @@ nav ul.active {
   display: flex;
 }
 
+.about-btn {
+  min-width: 220px;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 2rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #38bdf8 70%, #eaf2fb 100%);
+  color: #232946;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 2px 16px rgba(56, 189, 248, 0.18);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.about-btn:hover {
+  background: linear-gradient(90deg, #eaf2fb 60%, #38bdf8 100%);
+  color: #38bdf8;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 32px #38bdf8;
+}
+
 @media (max-width: 1200px) {
   .photos-gallery img:hover {
     width: 90vw;
