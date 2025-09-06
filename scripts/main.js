@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const sec = document.getElementById(section);
     if (button && sec) {
       button.addEventListener("click", () => {
-        // Przełącz widoczność sekcji
         sec.style.display =
           sec.style.display === "none" || sec.style.display === ""
             ? "block"
@@ -48,57 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Example: Display a welcome message in the console
   console.log("Welcome to my personal portfolio!");
-  console.log("2"); // Dodano do weryfikacji aktualności strony
-
-  // Show Education section
-  const showEducationBtn = document.getElementById("show-education-btn");
-  const educationSection = document.getElementById("education");
-  if (showEducationBtn && educationSection) {
-    showEducationBtn.addEventListener("click", () => {
-      educationSection.style.display = "block";
-      educationSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  // Show Skills section
-  const showSkillsBtn = document.getElementById("show-skills-btn");
-  const skillsSection = document.getElementById("skills");
-  if (showSkillsBtn && skillsSection) {
-    showSkillsBtn.addEventListener("click", () => {
-      skillsSection.style.display = "block";
-      skillsSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  // Show Photos section
-  const showPhotosBtn = document.getElementById("show-photos-btn");
-  const photosSection = document.getElementById("photos");
-  if (showPhotosBtn && photosSection) {
-    showPhotosBtn.addEventListener("click", () => {
-      photosSection.style.display = "block";
-      photosSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  // Show Experience section
-  const showExperienceBtn = document.getElementById("show-experience-btn");
-  const experienceSection = document.getElementById("experience");
-  if (showExperienceBtn && experienceSection) {
-    showExperienceBtn.addEventListener("click", () => {
-      experienceSection.style.display = "block";
-      experienceSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-
-  // Show Interests section
-  const showInterestsBtn = document.getElementById("show-interests-btn");
-  const interestsSection = document.getElementById("interests");
-  if (showInterestsBtn && interestsSection) {
-    showInterestsBtn.addEventListener("click", () => {
-      interestsSection.style.display = "block";
-      interestsSection.scrollIntoView({ behavior: "smooth" });
-    });
-  }
+  console.log("21"); // Dodano do weryfikacji aktualności strony
 
   const translations = {
     pl: {
